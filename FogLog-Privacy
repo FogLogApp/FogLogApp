@@ -1,0 +1,45 @@
+Privacy Policy
+FogLog · Last updated: July 2026
+
+No servers. No accounts. No tracking.
+Overview
+FogLog is a concussion recovery companion. Your privacy is central to how it works: all data you enter stays on your device. FogLog has no servers, no accounts, and sends nothing to the internet.
+
+What FogLog stores
+FogLog stores the following data, exclusively on your device:
+
+Your injury date and recovery phase
+Daily symptom logs (headache, fatigue, mood, sleep, energy)
+Exercise completion history
+App preferences (notification times, text size, bedtime target)
+None of this data is uploaded, shared, or accessible to anyone other than you.
+
+Apple Health (HealthKit)
+If you choose to enable Apple Health integration, FogLog requests read-only access to your sleep analysis data. This is used solely to pre-fill your daily sleep log and display sleep information on your Today screen.
+
+FogLog never writes data to Apple Health
+Sleep data is read in real time and never stored separately
+HealthKit access is entirely optional and can be revoked at any time via iOS Settings → Health → Data Access
+No health data is transmitted off your device
+Notifications
+If you enable reminders, FogLog schedules local notifications on your device. These are processed entirely by iOS. No notification content is sent to any server.
+
+Analytics and tracking
+FogLog contains no analytics, no advertising SDKs, no crash reporting services, and no third-party tracking of any kind. Your usage of the app is not monitored.
+
+Data storage and deletion
+All data is stored locally using iOS secure storage. You can permanently delete everything by using Settings → Reset all data, or by deleting the app from your device.
+
+Children
+FogLog is not directed at children under 13 and does not knowingly collect data from children. The app is intended for individuals recovering from a concussion under the guidance of a healthcare professional.
+
+Medical disclaimer
+FogLog is not a medical device and does not provide diagnoses or treatment recommendations. Always follow the advice of your healthcare professionals. Use this app as a complement to, not a replacement for, professional care.
+
+Changes to this policy
+If this policy changes in a meaningful way, you will see a notice when opening the app after an update. Continued use of the app after such notice constitutes acceptance of the revised policy.
+
+Contact
+Questions about this policy? Contact foglog.app@gmail.com
+
+FogLog · Version 1.0 · com.foglog.app
