@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FogLog – Privacy Policy</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -68,7 +67,7 @@
 
   <header>
     <h1>Privacy Policy</h1>
-    <p>FogLog · Last updated: July 2026</p>
+    <p>FogLog · Last updated: August 2026</p>
   </header>
 
   <span class="chip">No servers. No accounts. No tracking.</span>
@@ -76,19 +75,21 @@
   <h2>Overview</h2>
   <p>
     FogLog is a concussion recovery companion. Your privacy is central to how it works:
-    all data you enter stays on your device. FogLog has no servers, no accounts, and
-    sends nothing to the internet.
+    all data you enter stays on your device. FogLog has no servers and no accounts, and
+    never sends your data anywhere by itself. The only exception is when you deliberately
+    export or share it yourself, which is described below.
   </p>
 
   <h2>What FogLog stores</h2>
   <p>FogLog stores the following data, exclusively on your device:</p>
   <ul>
     <li>Your injury date and days since injury</li>
-    <li>Daily symptom logs (headache, fatigue, mood, sleep, energy)</li>
-    <li>Exercise completion history</li>
+    <li>Daily symptom ratings (headache, brain fog, fatigue, light sensitivity, sound sensitivity, neck pain, back pain, eye strain)</li>
+    <li>How you slept and your energy level, plus any note you write</li>
+    <li>Exercise completion history and any exercises you add yourself</li>
     <li>App preferences (notification times, text size, bedtime target)</li>
   </ul>
-  <p>None of this data is uploaded, shared, or accessible to anyone other than you.</p>
+  <p>Nobody else can reach this data. It is not uploaded, and FogLog has no way to read it.</p>
 
   <h2>Apple Health (HealthKit)</h2>
   <p>
@@ -101,6 +102,19 @@
     <li>Sleep data is read in real time and never stored separately</li>
     <li>HealthKit access is entirely optional and can be revoked at any time via iOS Settings → Health → Data Access</li>
     <li>No health data is transmitted off your device</li>
+  </ul>
+
+  <h2>Exporting and sharing your own data</h2>
+  <p>
+    FogLog lets you export everything it has stored, and lets you share a summary of your
+    recent weeks to bring to an appointment. Both use the standard iOS share sheet, so you
+    choose where the file goes.
+  </p>
+  <ul>
+    <li>Nothing is exported or shared unless you start it yourself</li>
+    <li>The file goes only to the destination you pick, such as Files, Mail, or Messages</li>
+    <li>Once it leaves FogLog, that copy is covered by the privacy policy of wherever you sent it, not by this one</li>
+    <li>Importing a file reads it from your device and overwrites your current data</li>
   </ul>
 
   <h2>Notifications</h2>
@@ -117,15 +131,16 @@
 
   <h2>Data storage and deletion</h2>
   <p>
-    All data is stored locally using iOS secure storage. You can permanently delete
-    everything by using Settings → Reset all data, or by deleting the app from your device.
+    All data is stored in FogLog's own private area on your device, which iOS keeps separate
+    from other apps. You can permanently delete everything using Settings → Reset all data,
+    or by deleting the app from your device.
   </p>
 
   <h2>Children</h2>
   <p>
-    FogLog is not directed at children under 13 and does not knowingly collect data
-    from children. The app is intended for individuals recovering from a concussion under
-    the guidance of a healthcare professional.
+    FogLog is intended for people aged 16 and older, in line with GDPR Article 9 on the
+    processing of health data, and does not knowingly collect data from anyone younger.
+    Younger users should only use it with a parent or guardian.
   </p>
 
   <h2>Medical disclaimer</h2>
@@ -148,7 +163,537 @@
     <a href="mailto:foglog.app@gmail.com">foglog.app@gmail.com</a>
   </p>
 
-  <footer>FogLog · Version 1.0 · com.foglog.app</footer>
+  <footer>FogLog · Version 1.0 · com.foglogapp.foglog</footer>
+
+
+
+</body></html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FogLog – Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #F5EFE4;
+      color: #2C2C2C;
+      padding: 40px 20px 80px;
+      max-width: 680px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    header { margin-bottom: 40px; }
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #1A1A1A;
+      margin-bottom: 6px;
+    }
+    header p { font-size: 13px; color: #888; }
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1A1A1A;
+      margin: 32px 0 10px;
+    }
+    p { font-size: 15px; color: #444; margin-bottom: 12px; }
+    ul { margin: 8px 0 12px 0; padding-left: 0; list-style: none; }
+    ul li {
+      font-size: 15px; color: #444;
+      padding: 4px 0 4px 20px;
+      position: relative;
+    }
+    ul li::before {
+      content: "·";
+      position: absolute;
+      left: 6px;
+      color: #4A7C6F;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    a { color: #4A7C6F; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 60px;
+      font-size: 12px;
+      color: #aaa;
+      text-align: center;
+    }
+    .chip {
+      display: inline-block;
+      background: rgba(74,124,111,0.12);
+      color: #4A7C6F;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>FogLog · Last updated: August 2026</p>
+  </header>
+
+  <span class="chip">No servers. No accounts. No tracking.</span>
+
+  <h2>Overview</h2>
+  <p>
+    FogLog is a concussion recovery companion. Your privacy is central to how it works:
+    all data you enter stays on your device. FogLog has no servers and no accounts, and
+    never sends your data anywhere by itself. The only exception is when you deliberately
+    export or share it yourself, which is described below.
+  </p>
+
+  <h2>What FogLog stores</h2>
+  <p>FogLog stores the following data, exclusively on your device:</p>
+  <ul>
+    <li>Your injury date and days since injury</li>
+    <li>Daily symptom ratings (headache, brain fog, fatigue, light sensitivity, sound sensitivity, neck pain, back pain, eye strain)</li>
+    <li>How you slept and your energy level, plus any note you write</li>
+    <li>Exercise completion history and any exercises you add yourself</li>
+    <li>App preferences (notification times, text size, bedtime target)</li>
+  </ul>
+  <p>Nobody else can reach this data. It is not uploaded, and FogLog has no way to read it.</p>
+
+  <h2>Apple Health (HealthKit)</h2>
+  <p>
+    If you choose to enable Apple Health integration, FogLog requests read-only access
+    to your sleep analysis data. This is used solely to pre-fill your daily sleep log and
+    display sleep information on your Today screen.
+  </p>
+  <ul>
+    <li>FogLog never writes data to Apple Health</li>
+    <li>Sleep data is read in real time and never stored separately</li>
+    <li>HealthKit access is entirely optional and can be revoked at any time via iOS Settings → Health → Data Access</li>
+    <li>No health data is transmitted off your device</li>
+  </ul>
+
+  <h2>Exporting and sharing your own data</h2>
+  <p>
+    FogLog lets you export everything it has stored, and lets you share a summary of your
+    recent weeks to bring to an appointment. Both use the standard iOS share sheet, so you
+    choose where the file goes.
+  </p>
+  <ul>
+    <li>Nothing is exported or shared unless you start it yourself</li>
+    <li>The file goes only to the destination you pick, such as Files, Mail, or Messages</li>
+    <li>Once it leaves FogLog, that copy is covered by the privacy policy of wherever you sent it, not by this one</li>
+    <li>Importing a file reads it from your device and overwrites your current data</li>
+  </ul>
+
+  <h2>Notifications</h2>
+  <p>
+    If you enable reminders, FogLog schedules local notifications on your device.
+    These are processed entirely by iOS. No notification content is sent to any server.
+  </p>
+
+  <h2>Analytics and tracking</h2>
+  <p>
+    FogLog contains no analytics, no advertising SDKs, no crash reporting services,
+    and no third-party tracking of any kind. Your usage of the app is not monitored.
+  </p>
+
+  <h2>Data storage and deletion</h2>
+  <p>
+    All data is stored in FogLog's own private area on your device, which iOS keeps separate
+    from other apps. You can permanently delete everything using Settings → Reset all data,
+    or by deleting the app from your device.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    FogLog is intended for people aged 16 and older, in line with GDPR Article 9 on the
+    processing of health data, and does not knowingly collect data from anyone younger.
+    Younger users should only use it with a parent or guardian.
+  </p>
+
+  <h2>Medical disclaimer</h2>
+  <p>
+    FogLog is not a medical device and does not provide diagnoses or treatment
+    recommendations. Always follow the advice of your healthcare professionals. Use this
+    app as a complement to, not a replacement for, professional care.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If this policy changes in a meaningful way, you will see a notice when opening the
+    app after an update. Continued use of the app after such notice constitutes acceptance
+    of the revised policy.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy? Contact
+    <a href="mailto:foglog.app@gmail.com">foglog.app@gmail.com</a>
+  </p>
+
+  <footer>FogLog · Version 1.0 · com.foglogapp.foglog</footer>
+
+
 
 </body>
-</html>
+<header>
+    <h1>Privacy Policy</h1>
+    <p>FogLog · Last updated: August 2026</p>
+  </header>
+<span class="chip">No servers. No accounts. No tracking.</span>
+<h2>Overview</h2>
+<p>
+    FogLog is a concussion recovery companion. Your privacy is central to how it works:
+    all data you enter stays on your device. FogLog has no servers and no accounts, and
+    never sends your data anywhere by itself. The only exception is when you deliberately
+    export or share it yourself, which is described below.
+  </p>
+<h2>What FogLog stores</h2>
+<p>FogLog stores the following data, exclusively on your device:</p>
+<ul>
+    <li>Your injury date and days since injury</li>
+    <li>Daily symptom ratings (headache, brain fog, fatigue, light sensitivity, sound sensitivity, neck pain, back pain, eye strain)</li>
+    <li>How you slept and your energy level, plus any note you write</li>
+    <li>Exercise completion history and any exercises you add yourself</li>
+    <li>App preferences (notification times, text size, bedtime target)</li>
+  </ul>
+<p>Nobody else can reach this data. It is not uploaded, and FogLog has no way to read it.</p>
+<h2>Apple Health (HealthKit)</h2>
+<p>
+    If you choose to enable Apple Health integration, FogLog requests read-only access
+    to your sleep analysis data. This is used solely to pre-fill your daily sleep log and
+    display sleep information on your Today screen.
+  </p>
+<ul>
+    <li>FogLog never writes data to Apple Health</li>
+    <li>Sleep data is read in real time and never stored separately</li>
+    <li>HealthKit access is entirely optional and can be revoked at any time via iOS Settings → Health → Data Access</li>
+    <li>No health data is transmitted off your device</li>
+  </ul>
+<h2>Exporting and sharing your own data</h2>
+<p>
+    FogLog lets you export everything it has stored, and lets you share a summary of your
+    recent weeks to bring to an appointment. Both use the standard iOS share sheet, so you
+    choose where the file goes.
+  </p>
+<ul>
+    <li>Nothing is exported or shared unless you start it yourself</li>
+    <li>The file goes only to the destination you pick, such as Files, Mail, or Messages</li>
+    <li>Once it leaves FogLog, that copy is covered by the privacy policy of wherever you sent it, not by this one</li>
+    <li>Importing a file reads it from your device and overwrites your current data</li>
+  </ul>
+<h2>Notifications</h2>
+<p>
+    If you enable reminders, FogLog schedules local notifications on your device.
+    These are processed entirely by iOS. No notification content is sent to any server.
+  </p>
+<h2>Analytics and tracking</h2>
+<p>
+    FogLog contains no analytics, no advertising SDKs, no crash reporting services,
+    and no third-party tracking of any kind. Your usage of the app is not monitored.
+  </p>
+<h2>Data storage and deletion</h2>
+<p>
+    All data is stored in FogLog's own private area on your device, which iOS keeps separate
+    from other apps. You can permanently delete everything using Settings → Reset all data,
+    or by deleting the app from your device.
+  </p>
+<h2>Children</h2>
+<p>
+    FogLog is intended for people aged 16 and older, in line with GDPR Article 9 on the
+    processing of health data, and does not knowingly collect data from anyone younger.
+    Younger users should only use it with a parent or guardian.
+  </p>
+<h2>Medical disclaimer</h2>
+<p>
+    FogLog is not a medical device and does not provide diagnoses or treatment
+    recommendations. Always follow the advice of your healthcare professionals. Use this
+    app as a complement to, not a replacement for, professional care.
+  </p>
+<h2>Changes to this policy</h2>
+<p>
+    If this policy changes in a meaningful way, you will see a notice when opening the
+    app after an update. Continued use of the app after such notice constitutes acceptance
+    of the revised policy.
+  </p>
+<h2>Contact</h2>
+<p>
+    Questions about this policy? Contact
+    <a href="mailto:foglog.app@gmail.com">foglog.app@gmail.com</a>
+  </p>
+<footer>FogLog · Version 1.0 · com.foglogapp.foglog</footer>
+<body>
+
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>FogLog · Last updated: August 2026</p>
+  </header>
+
+  <span class="chip">No servers. No accounts. No tracking.</span>
+
+  <h2>Overview</h2>
+  <p>
+    FogLog is a concussion recovery companion. Your privacy is central to how it works:
+    all data you enter stays on your device. FogLog has no servers and no accounts, and
+    never sends your data anywhere by itself. The only exception is when you deliberately
+    export or share it yourself, which is described below.
+  </p>
+
+  <h2>What FogLog stores</h2>
+  <p>FogLog stores the following data, exclusively on your device:</p>
+  <ul>
+    <li>Your injury date and days since injury</li>
+    <li>Daily symptom ratings (headache, brain fog, fatigue, light sensitivity, sound sensitivity, neck pain, back pain, eye strain)</li>
+    <li>How you slept and your energy level, plus any note you write</li>
+    <li>Exercise completion history and any exercises you add yourself</li>
+    <li>App preferences (notification times, text size, bedtime target)</li>
+  </ul>
+  <p>Nobody else can reach this data. It is not uploaded, and FogLog has no way to read it.</p>
+
+  <h2>Apple Health (HealthKit)</h2>
+  <p>
+    If you choose to enable Apple Health integration, FogLog requests read-only access
+    to your sleep analysis data. This is used solely to pre-fill your daily sleep log and
+    display sleep information on your Today screen.
+  </p>
+  <ul>
+    <li>FogLog never writes data to Apple Health</li>
+    <li>Sleep data is read in real time and never stored separately</li>
+    <li>HealthKit access is entirely optional and can be revoked at any time via iOS Settings → Health → Data Access</li>
+    <li>No health data is transmitted off your device</li>
+  </ul>
+
+  <h2>Exporting and sharing your own data</h2>
+  <p>
+    FogLog lets you export everything it has stored, and lets you share a summary of your
+    recent weeks to bring to an appointment. Both use the standard iOS share sheet, so you
+    choose where the file goes.
+  </p>
+  <ul>
+    <li>Nothing is exported or shared unless you start it yourself</li>
+    <li>The file goes only to the destination you pick, such as Files, Mail, or Messages</li>
+    <li>Once it leaves FogLog, that copy is covered by the privacy policy of wherever you sent it, not by this one</li>
+    <li>Importing a file reads it from your device and overwrites your current data</li>
+  </ul>
+
+  <h2>Notifications</h2>
+  <p>
+    If you enable reminders, FogLog schedules local notifications on your device.
+    These are processed entirely by iOS. No notification content is sent to any server.
+  </p>
+
+  <h2>Analytics and tracking</h2>
+  <p>
+    FogLog contains no analytics, no advertising SDKs, no crash reporting services,
+    and no third-party tracking of any kind. Your usage of the app is not monitored.
+  </p>
+
+  <h2>Data storage and deletion</h2>
+  <p>
+    All data is stored in FogLog's own private area on your device, which iOS keeps separate
+    from other apps. You can permanently delete everything using Settings → Reset all data,
+    or by deleting the app from your device.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    FogLog is intended for people aged 16 and older, in line with GDPR Article 9 on the
+    processing of health data, and does not knowingly collect data from anyone younger.
+    Younger users should only use it with a parent or guardian.
+  </p>
+
+  <h2>Medical disclaimer</h2>
+  <p>
+    FogLog is not a medical device and does not provide diagnoses or treatment
+    recommendations. Always follow the advice of your healthcare professionals. Use this
+    app as a complement to, not a replacement for, professional care.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If this policy changes in a meaningful way, you will see a notice when opening the
+    app after an update. Continued use of the app after such notice constitutes acceptance
+    of the revised policy.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy? Contact
+    <a href="mailto:foglog.app@gmail.com">foglog.app@gmail.com</a>
+  </p>
+
+  <footer>FogLog · Version 1.0 · com.foglogapp.foglog</footer>
+
+
+
+</body>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FogLog – Privacy Policy</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #F5EFE4;
+      color: #2C2C2C;
+      padding: 40px 20px 80px;
+      max-width: 680px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    header { margin-bottom: 40px; }
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #1A1A1A;
+      margin-bottom: 6px;
+    }
+    header p { font-size: 13px; color: #888; }
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #1A1A1A;
+      margin: 32px 0 10px;
+    }
+    p { font-size: 15px; color: #444; margin-bottom: 12px; }
+    ul { margin: 8px 0 12px 0; padding-left: 0; list-style: none; }
+    ul li {
+      font-size: 15px; color: #444;
+      padding: 4px 0 4px 20px;
+      position: relative;
+    }
+    ul li::before {
+      content: "·";
+      position: absolute;
+      left: 6px;
+      color: #4A7C6F;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    a { color: #4A7C6F; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 60px;
+      font-size: 12px;
+      color: #aaa;
+      text-align: center;
+    }
+    .chip {
+      display: inline-block;
+      background: rgba(74,124,111,0.12);
+      color: #4A7C6F;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>FogLog · Last updated: August 2026</p>
+  </header>
+
+  <span class="chip">No servers. No accounts. No tracking.</span>
+
+  <h2>Overview</h2>
+  <p>
+    FogLog is a concussion recovery companion. Your privacy is central to how it works:
+    all data you enter stays on your device. FogLog has no servers and no accounts, and
+    never sends your data anywhere by itself. The only exception is when you deliberately
+    export or share it yourself, which is described below.
+  </p>
+
+  <h2>What FogLog stores</h2>
+  <p>FogLog stores the following data, exclusively on your device:</p>
+  <ul>
+    <li>Your injury date and days since injury</li>
+    <li>Daily symptom ratings (headache, brain fog, fatigue, light sensitivity, sound sensitivity, neck pain, back pain, eye strain)</li>
+    <li>How you slept and your energy level, plus any note you write</li>
+    <li>Exercise completion history and any exercises you add yourself</li>
+    <li>App preferences (notification times, text size, bedtime target)</li>
+  </ul>
+  <p>Nobody else can reach this data. It is not uploaded, and FogLog has no way to read it.</p>
+
+  <h2>Apple Health (HealthKit)</h2>
+  <p>
+    If you choose to enable Apple Health integration, FogLog requests read-only access
+    to your sleep analysis data. This is used solely to pre-fill your daily sleep log and
+    display sleep information on your Today screen.
+  </p>
+  <ul>
+    <li>FogLog never writes data to Apple Health</li>
+    <li>Sleep data is read in real time and never stored separately</li>
+    <li>HealthKit access is entirely optional and can be revoked at any time via iOS Settings → Health → Data Access</li>
+    <li>No health data is transmitted off your device</li>
+  </ul>
+
+  <h2>Exporting and sharing your own data</h2>
+  <p>
+    FogLog lets you export everything it has stored, and lets you share a summary of your
+    recent weeks to bring to an appointment. Both use the standard iOS share sheet, so you
+    choose where the file goes.
+  </p>
+  <ul>
+    <li>Nothing is exported or shared unless you start it yourself</li>
+    <li>The file goes only to the destination you pick, such as Files, Mail, or Messages</li>
+    <li>Once it leaves FogLog, that copy is covered by the privacy policy of wherever you sent it, not by this one</li>
+    <li>Importing a file reads it from your device and overwrites your current data</li>
+  </ul>
+
+  <h2>Notifications</h2>
+  <p>
+    If you enable reminders, FogLog schedules local notifications on your device.
+    These are processed entirely by iOS. No notification content is sent to any server.
+  </p>
+
+  <h2>Analytics and tracking</h2>
+  <p>
+    FogLog contains no analytics, no advertising SDKs, no crash reporting services,
+    and no third-party tracking of any kind. Your usage of the app is not monitored.
+  </p>
+
+  <h2>Data storage and deletion</h2>
+  <p>
+    All data is stored in FogLog's own private area on your device, which iOS keeps separate
+    from other apps. You can permanently delete everything using Settings → Reset all data,
+    or by deleting the app from your device.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    FogLog is intended for people aged 16 and older, in line with GDPR Article 9 on the
+    processing of health data, and does not knowingly collect data from anyone younger.
+    Younger users should only use it with a parent or guardian.
+  </p>
+
+  <h2>Medical disclaimer</h2>
+  <p>
+    FogLog is not a medical device and does not provide diagnoses or treatment
+    recommendations. Always follow the advice of your healthcare professionals. Use this
+    app as a complement to, not a replacement for, professional care.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If this policy changes in a meaningful way, you will see a notice when opening the
+    app after an update. Continued use of the app after such notice constitutes acceptance
+    of the revised policy.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy? Contact
+    <a href="mailto:foglog.app@gmail.com">foglog.app@gmail.com</a>
+  </p>
+
+  <footer>FogLog · Version 1.0 · com.foglogapp.foglog</footer>
+
+
+
+</body></html>
